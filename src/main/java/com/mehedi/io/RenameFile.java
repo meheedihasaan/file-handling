@@ -13,7 +13,7 @@ public class RenameFile {
         File oldFile = new File(oldFilePath);
         File newFile = new File(newFilePath);
         if (!oldFile.exists()) {
-            System.out.println("Old file not exists.");
+            System.out.println("Old file doesn't exist.");
         }
         else {
             boolean isRenamed = oldFile.renameTo(newFile);

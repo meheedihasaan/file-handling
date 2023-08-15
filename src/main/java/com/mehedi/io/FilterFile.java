@@ -11,7 +11,7 @@ public class FilterFile {
         String directoryPath = FileConstants.BASE_PATH;
         File directory = new File(directoryPath);
         if (!directory.exists()) {
-            System.out.println("Directory not exists.");
+            System.out.println("Directory doesn't exist.");
         }
         else {
             FileFilter textFileFilter = new FileFilter() {
