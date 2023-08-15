@@ -5,6 +5,7 @@ import com.mehedi.constant.FileConstants;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class OutputStreamExample {
 
@@ -14,7 +15,7 @@ public class OutputStreamExample {
         String filePath = FileConstants.BASE_PATH + File.separator + "OutputFile.txt";
         String data = "Hello. I'm Mehedi Hasan. I'm from Rangpur city. Currently, I'm working as a Junior Software Engineer at Dhrubok Infotech Services Limited.";
         byte[] bytes = data.getBytes();
-        FileOutputStream stream = null;
+        OutputStream stream = null;
         try {
             stream = new FileOutputStream(filePath);
             stream.write(bytes);

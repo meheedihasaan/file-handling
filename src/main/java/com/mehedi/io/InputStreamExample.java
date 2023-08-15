@@ -5,6 +5,7 @@ import com.mehedi.constant.FileConstants;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class InputStreamExample {
 
@@ -17,7 +18,7 @@ public class InputStreamExample {
             System.out.println("File doesn't exists.");
         }
 
-        FileInputStream stream = null;
+        InputStream stream = null;
         try {
             stream = new FileInputStream(filePath);
             int c;
