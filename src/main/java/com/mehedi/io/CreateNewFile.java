@@ -14,7 +14,7 @@ public class CreateNewFile {
         else {
             try {
                 file.createNewFile();
-                System.out.println("File is created. File path: " + file.getParent());
+                System.out.println("File is created. File path: " + file.getPath());
             }
             catch (IOException ex) {
                 ex.printStackTrace();
