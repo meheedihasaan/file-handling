@@ -19,6 +19,8 @@ public class OutputStreamExample {
         try {
             stream = new FileOutputStream(filePath);
             stream.write(bytes);
+            System.out.println("Data written in the file.");
+
             stream.flush();
             stream.close();
         }
