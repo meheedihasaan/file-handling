@@ -9,7 +9,7 @@ import java.io.InputStream;
 
 public class InputStreamExample {
 
-    //Read data from file. If file doesn't exist then throws exception
+    //Read byte data from file. If file doesn't exist then throws exception
 
     public static void main(String[] args) {
         String filePath = FileConstants.BASE_PATH + File.separator + "AsciiTextFile.txt";

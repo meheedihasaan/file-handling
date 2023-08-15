@@ -9,11 +9,11 @@ import java.io.OutputStream;
 
 public class OutputStreamExample {
 
-    //Write data to file. If file doesn't exist then first create a new file and then writes byte data into the new file
+    //Write byte data to file. If file doesn't exist then first create a new file and then writes byte data into the new file
 
     public static void main(String[] args) {
         String filePath = FileConstants.BASE_PATH + File.separator + "AsciiOutputFile.txt";
-        String data = "Hello. I'm Mehedi Hasan. I'm from Rangpur city. Currently, I'm working as a Junior Software Engineer at Dhrubok Infotech Services Limited.";
+        String data = "Hello. I'm Mehedi Hasan. I'm from Rangpur city. Currently, I'm working as a Junior Software Engineer at Dhrubok Infotech Services Limited. হ্যালো. আমি মেহেদী হাসান। আমি রংপুর শহর থেকে এসেছি। বর্তমানে, আমি ধ্রুবক ইনফোটেক সার্ভিসেস লিমিটেডে জুনিয়র সফটওয়্যার ইঞ্জিনিয়ার হিসেবে কাজ করছি।";
         byte[] bytes = data.getBytes();
         OutputStream stream = null;
         try {
