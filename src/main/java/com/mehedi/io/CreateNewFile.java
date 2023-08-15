@@ -1,12 +1,14 @@
 package com.mehedi.io;
 
+import com.mehedi.constant.FileConstants;
+
 import java.io.File;
 import java.io.IOException;
 
 public class CreateNewFile {
 
     public static void main(String[] args) {
-        String filePath = "D:" + File.separator + "mehedi" + File.separator + "files" + File.separator + "NewFile1.txt";
+        String filePath = FileConstants.BASE_PATH + File.separator + "NewFile1.txt";
         File file = new File(filePath);
         if (file.exists()) {
             System.out.println("File already exists. File path: " + file.getPath());

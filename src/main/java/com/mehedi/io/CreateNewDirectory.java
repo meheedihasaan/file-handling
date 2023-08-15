@@ -1,12 +1,14 @@
 package com.mehedi.io;
 
+import com.mehedi.constant.FileConstants;
+
 import java.io.File;
 
 public class CreateNewDirectory {
 
     public static void main(String[] args) {
-        String folderPath = "D:" + File.separator + "mehedi" + File.separator + "files" + File.separator + "New Folder";
-        File directory = new File(folderPath);
+        String directoryPath = FileConstants.BASE_PATH + File.separator + "New Folder";
+        File directory = new File(directoryPath);
         if (directory.exists()) {
             System.out.println("Directory already exists. Directory path: " + directory.getPath());
         }

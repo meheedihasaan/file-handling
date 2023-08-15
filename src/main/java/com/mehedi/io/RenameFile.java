@@ -1,12 +1,14 @@
 package com.mehedi.io;
 
+import com.mehedi.constant.FileConstants;
+
 import java.io.File;
 
 public class RenameFile {
 
     public static void main(String[] args) {
-        String oldFilePath = "D:" + File.separator + "mehedi" + File.separator + "files" + File.separator + "NewFile1.txt";
-        String newFilePath = "D:" + File.separator + "mehedi" + File.separator + "files" + File.separator + "NewFile.txt";
+        String oldFilePath = FileConstants.BASE_PATH + File.separator + "NewFile1.txt";
+        String newFilePath = FileConstants.BASE_PATH + File.separator + "NewFile.txt";
 
         File oldFile = new File(oldFilePath);
         File newFile = new File(newFilePath);
